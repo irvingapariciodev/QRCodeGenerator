@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace QRCodeGenerator.Controllers
+namespace QRCodeGenerator.Api.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
