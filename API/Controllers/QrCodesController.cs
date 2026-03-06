@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace QRCodeGenerator.Api.API.Controllers
 {
-    public class QrCodesController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class QrCodesController : ControllerBase
     {
         public IActionResult Index()
         {
-            return View();
+            return Ok();
         }
     }
 }
