@@ -1,4 +1,4 @@
-﻿# 1. Introduction
+# 1. Introduction
 
 ## 1.1 Purpose
 
@@ -12,7 +12,7 @@ The QR Code Generator is a lightweight service that generates QR codes from inpu
 
 •	Return QR as PNG (300 x 300)
 
-•	Basic validation
+•	Basic validation ( Length, empty input)
 
 ### Not Included:
 

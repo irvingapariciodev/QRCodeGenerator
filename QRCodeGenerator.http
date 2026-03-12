@@ -1,6 +1,4 @@
 @QRCodeGenerator_HostAddress = http://localhost:5126
 
-GET {{QRCodeGenerator_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
+### Generate QR code for the URL (sample request)
+GET {{QRCodeGenerator_HostAddress}}/QrCode/qrCode?content=https%3A%2F%2Fufg.edu.sv%2F
