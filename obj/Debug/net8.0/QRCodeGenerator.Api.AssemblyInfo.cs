@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QRCodeGenerator.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f642d22a030e43007bf519a7df146e687381c426")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92b63f2491b0b5003c061677b780401396d6d0d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("QRCodeGenerator.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QRCodeGenerator.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
