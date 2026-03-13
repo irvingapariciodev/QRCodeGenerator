@@ -11,6 +11,16 @@ namespace QRCodeGenerator.Services
         {
             var generator = new QRCoder.QRCodeGenerator();
 
+            if (string.IsNullOrEmpty(url) || string.IsNullOrWhiteSpace(url))
+            {
+                return null;
+            }
+
+            if(url.Length > 2000)
+            {
+                return null;
+            }
+
             QRCodeData data = generator.CreateQrCode(
                 url,
                 QRCoder.QRCodeGenerator.ECCLevel.Q
