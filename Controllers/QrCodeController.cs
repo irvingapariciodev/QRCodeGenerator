@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
+using QRCodeGenerator.API.Models;
 using QRCodeGenerator.Services;
 
 namespace QRCodeGenerator.API.Controllers
 {
     [ApiController]
-    [Microsoft.AspNetCore.Mvc.Route("[controller]")]
+    [Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
     public class QrCodeController : ControllerBase
     {
         private readonly QrCodeService _qrCodeService;
@@ -13,27 +14,27 @@ namespace QRCodeGenerator.API.Controllers
 
         public QrCodeController(QrCodeService qrCodeService) => _qrCodeService = qrCodeService;
 
-        [HttpPost]
+        [HttpPost("Generate")]
         [Produces("image/png")]
         [ProducesResponseType(typeof(FileContentResult), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(FileContentResult), StatusCodes.Status400BadRequest)]
-        public IActionResult GenerateQrCode([FromBody] string content)
+        public IActionResult GenerateQrCode([FromBody] GenerateQrCodeRequest content)
         {
-            if (string.IsNullOrEmpty(content) || string.IsNullOrWhiteSpace(content)){
+            if (string.IsNullOrEmpty(content.Content) || string.IsNullOrWhiteSpace(content.Content)){
                 return BadRequest("URL cannot be empty.");
             }
 
-            if (content.Length > maxURLLenght)
+            if (content.Content.Length > maxURLLenght)
             {
                 return BadRequest($"URL cannot be greather than {maxURLLenght} characters.");
             }
 
-            if(!_qrCodeService.IsValidUTF8(content))
+            if(!_qrCodeService.IsValidUTF8(content.Content))
             {
                 return BadRequest("URL must be a valid UTF-8 string.");
             }
 
-            var qrCodeImage = _qrCodeService.GenerateQrCode(content.Trim());
+            var qrCodeImage = _qrCodeService.GenerateQrCode(content.Content.Trim());
             return File(qrCodeImage, "image/png", "QRCode.png");
         }
     }

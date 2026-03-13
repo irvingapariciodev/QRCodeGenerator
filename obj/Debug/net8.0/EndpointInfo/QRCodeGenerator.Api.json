@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/QrCode": {
+    "/api/QrCode/Generate": {
       "post": {
         "tags": [
           "QrCode"
@@ -14,17 +14,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/GenerateQrCodeRequest"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/GenerateQrCodeRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/GenerateQrCodeRequest"
               }
             }
           }
@@ -56,5 +56,18 @@
       }
     }
   },
-  "components": { }
+  "components": {
+    "schemas": {
+      "GenerateQrCodeRequest": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }

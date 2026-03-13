@@ -2,14 +2,14 @@
   {
     "ContainingType": "QRCodeGenerator.API.Controllers.QrCodeController",
     "Method": "GenerateQrCode",
-    "RelativePath": "QrCode",
+    "RelativePath": "api/QrCode/Generate",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "content",
-        "Type": "System.String",
+        "Type": "QRCodeGenerator.API.Models.GenerateQrCodeRequest",
         "IsRequired": true
       }
     ],
