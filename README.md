@@ -97,3 +97,19 @@ The test suite validates:
 - Input validation
 - Response time
 - Controller error responses
+
+# Changelog
+
+## v1.0.0
+
+Initial stable release.
+
+### Features
+- QR code generation endpoint
+- Input validation
+- UTF-8 validation
+- Unit tests for service and controller
+- Swagger documentation
+
+### Improvements
+- Clean architecture with API, Application, Domain layers
