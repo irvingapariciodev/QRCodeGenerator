@@ -20,22 +20,37 @@ namespace QRCodeGenerator.API.Controllers
         [ProducesResponseType(typeof(FileContentResult), StatusCodes.Status400BadRequest)]
         public IActionResult GenerateQrCode([FromBody] GenerateQrCodeRequest content)
         {
-            if (string.IsNullOrEmpty(content.Content) || string.IsNullOrWhiteSpace(content.Content)){
-                return BadRequest("URL cannot be empty.");
-            }
-
-            if (content.Content.Length > maxURLLenght)
+            try
             {
-                return BadRequest($"URL cannot be greather than {maxURLLenght} characters.");
-            }
+                if (string.IsNullOrEmpty(content.Content) || string.IsNullOrWhiteSpace(content.Content))
+                {
+                    return BadRequest("URL cannot be empty.");
+                }
 
-            if(!_qrCodeService.IsValidUTF8(content.Content))
+                if (content.Content.Length > maxURLLenght)
+                {
+                    return BadRequest($"URL cannot be greather than {maxURLLenght} characters.");
+                }
+
+                if (!_qrCodeService.IsValidUTF8(content.Content))
+                {
+                    return BadRequest("URL must be a valid UTF-8 string.");
+                }
+
+                var qrCodeImage = _qrCodeService.GenerateQrCode(content.Content.Trim());
+
+                if (qrCodeImage == null || qrCodeImage.Length == 0)
+                {
+                    return BadRequest("Failed to generate QR code.");
+                }
+
+                return File(qrCodeImage, "image/png", "QRCode.png");
+            }
+            catch (Exception ex)
             {
-                return BadRequest("URL must be a valid UTF-8 string.");
+                return StatusCode(StatusCodes.Status500InternalServerError,
+            $"Internal server error: {ex.Message}");
             }
-
-            var qrCodeImage = _qrCodeService.GenerateQrCode(content.Content.Trim());
-            return File(qrCodeImage, "image/png", "QRCode.png");
         }
     }
 }
