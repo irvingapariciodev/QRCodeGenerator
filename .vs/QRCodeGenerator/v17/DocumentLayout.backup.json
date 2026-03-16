@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\irvin\\source\\repos\\IASERVICES\\QRCodeGenerator\\QRCodeGenerator\\",
+  "WorkspaceRootPath": "C:\\Users\\irvin\\source\\repos\\COURSERA\\QRCodeGenerator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F8F8F67-ABE8-4D59-A921-A72855D24FB0}|QRCodeGenerator.Api.csproj|c:\\users\\irvin\\source\\repos\\iaservices\\qrcodegenerator\\qrcodegenerator\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{9F8F8F67-ABE8-4D59-A921-A72855D24FB0}|QRCodeGenerator.Api.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{DA7D1ABE-5A28-47B7-B33C-861730C28007}|QRCodeGenerator.API\\QRCodeGenerator.API.csproj|c:\\users\\irvin\\source\\repos\\coursera\\qrcodegenerator\\qrcodegenerator.api\\services\\qrcodeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA7D1ABE-5A28-47B7-B33C-861730C28007}|QRCodeGenerator.API\\QRCodeGenerator.API.csproj|solutionrelative:qrcodegenerator.api\\services\\qrcodeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\irvin\\source\\repos\\IASERVICES\\QRCodeGenerator\\QRCodeGenerator\\.editorconfig||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.editorconfig||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{DA7D1ABE-5A28-47B7-B33C-861730C28007}|QRCodeGenerator.API\\QRCodeGenerator.API.csproj|c:\\users\\irvin\\source\\repos\\coursera\\qrcodegenerator\\qrcodegenerator.api\\models\\generateqrcoderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA7D1ABE-5A28-47B7-B33C-861730C28007}|QRCodeGenerator.API\\QRCodeGenerator.API.csproj|solutionrelative:qrcodegenerator.api\\models\\generateqrcoderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA7D1ABE-5A28-47B7-B33C-861730C28007}|QRCodeGenerator.API\\QRCodeGenerator.API.csproj|c:\\users\\irvin\\source\\repos\\coursera\\qrcodegenerator\\qrcodegenerator.api\\controllers\\qrcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA7D1ABE-5A28-47B7-B33C-861730C28007}|QRCodeGenerator.API\\QRCodeGenerator.API.csproj|solutionrelative:qrcodegenerator.api\\controllers\\qrcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,33 +53,42 @@
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\irvin\\source\\repos\\IASERVICES\\QRCodeGenerator\\QRCodeGenerator\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\irvin\\source\\repos\\IASERVICES\\QRCodeGenerator\\QRCodeGenerator\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAAAAIBAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-23T21:17:35.209Z",
+              "Title": "QrCodeServices.cs",
+              "DocumentMoniker": "C:\\Users\\irvin\\source\\repos\\COURSERA\\QRCodeGenerator\\QRCodeGenerator.API\\Services\\QrCodeServices.cs",
+              "RelativeDocumentMoniker": "QRCodeGenerator.API\\Services\\QrCodeServices.cs",
+              "ToolTip": "C:\\Users\\irvin\\source\\repos\\COURSERA\\QRCodeGenerator\\QRCodeGenerator.API\\Services\\QrCodeServices.cs",
+              "RelativeToolTip": "QRCodeGenerator.API\\Services\\QrCodeServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T20:02:35.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": ".editorconfig",
-              "DocumentMoniker": "C:\\Users\\irvin\\source\\repos\\IASERVICES\\QRCodeGenerator\\QRCodeGenerator\\.editorconfig",
-              "RelativeDocumentMoniker": ".editorconfig",
-              "ToolTip": "C:\\Users\\irvin\\source\\repos\\IASERVICES\\QRCodeGenerator\\QRCodeGenerator\\.editorconfig",
-              "RelativeToolTip": ".editorconfig",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-23T21:14:39.119Z",
+              "Title": "GenerateQrCodeRequest.cs",
+              "DocumentMoniker": "C:\\Users\\irvin\\source\\repos\\COURSERA\\QRCodeGenerator\\QRCodeGenerator.API\\Models\\GenerateQrCodeRequest.cs",
+              "RelativeDocumentMoniker": "QRCodeGenerator.API\\Models\\GenerateQrCodeRequest.cs",
+              "ToolTip": "C:\\Users\\irvin\\source\\repos\\COURSERA\\QRCodeGenerator\\QRCodeGenerator.API\\Models\\GenerateQrCodeRequest.cs",
+              "RelativeToolTip": "QRCodeGenerator.API\\Models\\GenerateQrCodeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T20:02:32.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QrCodeController.cs",
+              "DocumentMoniker": "C:\\Users\\irvin\\source\\repos\\COURSERA\\QRCodeGenerator\\QRCodeGenerator.API\\Controllers\\QrCodeController.cs",
+              "RelativeDocumentMoniker": "QRCodeGenerator.API\\Controllers\\QrCodeController.cs",
+              "ToolTip": "C:\\Users\\irvin\\source\\repos\\COURSERA\\QRCodeGenerator\\QRCodeGenerator.API\\Controllers\\QrCodeController.cs",
+              "RelativeToolTip": "QRCodeGenerator.API\\Controllers\\QrCodeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T20:01:59.325Z",
               "EditorCaption": ""
             }
           ]
